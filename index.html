@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="icon" type="image/jpg" href="img/icon.jpg">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+  <div class="container d-flex align-items-center justify-content-center h-100">
+    <div class="row w-100">
+      <div class="col-lg-6 mx-auto">
+        <div class="weather-card text-center p-4">
+          <h1>Weather App</h1>
+          <p class="mb-4">Get real-time weather updates for your favorite cities</p>
+          <div class="input-group mb-3">
+            <input type="text" id="cityInput" class="form-control search-input" placeholder="Enter city name">
+            <button class="btn btn-custom" onclick="getWeather()">Search</button>
+          </div>
+          <div id="weatherResult">
+            <!-- Weather results will appear here -->
+          </div>
+        </div>
+        <div class="footer">Powered by WeatherAPI</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
